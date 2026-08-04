@@ -5,7 +5,14 @@ import java.util.ArrayList;
 public class ArrayLists {
 
     public static ArrayList<Integer> removeDuplicates(ArrayList<Integer> numbers){
-        return null;
+        ArrayList<Integer> newList = new ArrayList<>();
+
+        for (Integer number : numbers) {
+            if (!newList.contains(number)) {
+                newList.add(number);
+            }
+        }
+        return newList;
     }
 
     public static int secondLargest(ArrayList<Integer> numbers){
