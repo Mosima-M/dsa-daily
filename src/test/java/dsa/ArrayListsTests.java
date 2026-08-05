@@ -69,29 +69,29 @@ class ArrayListsTest {
                 ArrayLists.secondLargest(numbers));
     }
 
-//    @Test
-//    void shouldRotateRightByTwo() {
-//
-//        ArrayList<Integer> numbers =
-//                new ArrayList<>(Arrays.asList(1,2,3,4,5));
-//
-//        ArrayList<Integer> expected =
-//                new ArrayList<>(Arrays.asList(4,5,1,2,3));
-//
-//        assertEquals(expected,
-//                ArrayLists.rotateRight(numbers,2));
-//    }
-//
-//    @Test
-//    void shouldRotateByZero() {
-//
-//        ArrayList<Integer> numbers =
-//                new ArrayList<>(Arrays.asList(1,2,3));
-//
-//        assertEquals(numbers,
-//                ArrayLists.rotateRight(numbers,0));
-//    }
-//
+    @Test
+    void shouldRotateRightByTwo() {
+
+        ArrayList<Integer> numbers =
+                new ArrayList<>(Arrays.asList(1,2,3,4,5));
+
+        ArrayList<Integer> expected =
+                new ArrayList<>(Arrays.asList(4,5,1,2,3));
+
+        assertEquals(expected,
+                ArrayLists.rotateRight(numbers,2));
+    }
+
+    @Test
+    void shouldRotateByZero() {
+
+        ArrayList<Integer> numbers =
+                new ArrayList<>(Arrays.asList(1,2,3));
+
+        assertEquals(numbers,
+                ArrayLists.rotateRight(numbers,0));
+    }
+
 //    @Test
 //    void shouldRotateMoreThanSize() {
 //

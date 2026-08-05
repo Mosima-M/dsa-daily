@@ -36,9 +36,28 @@ public class ArrayLists {
         return secondLargest;
     }
 
-    public static ArrayList<Integer> rotateRight(ArrayList<Integer> numbers, int k){
+    public static ArrayList<Integer> rotateRight(ArrayList<Integer> numbers, int steps) {
 
-        return null;
+        if (numbers.size() <= 1) {
+            return numbers;
+        }
+
+        steps %= numbers.size();
+
+        while (steps > 0) {
+
+            int last = numbers.get(numbers.size() - 1);
+
+            for (int i = numbers.size() - 1; i > 0; i--) {
+                numbers.set(i, numbers.get(i - 1));
+            }
+
+            numbers.set(0, last);
+            steps--;
+        }
+
+        return numbers;
+
     }
 
 }
