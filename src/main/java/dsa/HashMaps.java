@@ -19,8 +19,18 @@ public class HashMaps {
         return wordCount;
     }
 
-    public static String highestMark(HashMap<String, Integer> marks){
-        return null;
+    public static String highestMark(HashMap<String, Integer> marks) {
+
+        String highestStudent = "";
+        int highestMark = Integer.MIN_VALUE;
+
+        for (String student : marks.keySet()) {
+            if (marks.get(student) > highestMark) {
+                highestMark = marks.get(student);
+                highestStudent = student;
+            }
+        }
+        return highestStudent;
     }
 
     public static HashMap<String, Integer> removeBelow(HashMap<String, Integer> map, int minimum){
