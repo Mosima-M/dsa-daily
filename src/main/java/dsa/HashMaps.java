@@ -33,8 +33,15 @@ public class HashMaps {
         return highestStudent;
     }
 
-    public static HashMap<String, Integer> removeBelow(HashMap<String, Integer> map, int minimum){
-        return null;
+    public static HashMap<String, Integer> removeBelow(HashMap<String, Integer> map, int minimum) {
+
+        HashMap<String, Integer> newMap = new HashMap<>();
+        for (String key : map.keySet()) {
+            if (map.get(key) >= minimum) {
+                newMap.put(key, map.get(key));
+            }
+        }
+        return newMap;
     }
 }
 
