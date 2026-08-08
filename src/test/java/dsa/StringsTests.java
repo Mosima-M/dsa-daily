@@ -11,6 +11,7 @@ class StringsTests {
         assertEquals("321", Strings.reverseString("123"));
         assertEquals("", Strings.reverseString(""));
     }
+
     @Test
     void countVowelsTests() {
         assertEquals(2, Strings.countVowels("hello"));
@@ -20,4 +21,14 @@ class StringsTests {
         assertEquals(0, Strings.countVowels(""));
     }
 
+    @Test
+    void isPalindromeTests() {
+        assertTrue(Strings.isPalindrome("madam"));
+        assertTrue(Strings.isPalindrome("racecar"));
+        assertTrue(Strings.isPalindrome("a"));
+        assertTrue(Strings.isPalindrome(""));
+
+        assertFalse(Strings.isPalindrome("hello"));
+        assertFalse(Strings.isPalindrome("Java"));
+    }
 }
