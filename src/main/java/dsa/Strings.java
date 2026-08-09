@@ -13,9 +13,13 @@ public class Strings {
 
     public static int countVowels(String text) {
         int count = 0;
-        String vowels = "aeiouAEIOU";
-        for (int i = 0; i < text.length(); i++) {
-            if (vowels.indexOf(text.charAt(i)) != -1) {
+
+        for (char character : text.toLowerCase().toCharArray()) {
+            if (character == 'a' ||
+                    character == 'e' ||
+                    character == 'i' ||
+                    character == 'o' ||
+                    character == 'u') {
                 count++;
             }
         }

@@ -17,7 +17,7 @@ class StringsTests {
         assertEquals(2, Strings.countVowels("hello"));
         assertEquals(5, Strings.countVowels("AEIOU"));
         assertEquals(0, Strings.countVowels("rhythm"));
-        assertEquals(3, Strings.countVowels("Java Programming"));
+        assertEquals(5, Strings.countVowels("Java Programming"));
         assertEquals(0, Strings.countVowels(""));
     }
 
