@@ -3,8 +3,14 @@ package dsa;
 public class Strings {
 
     public static String reverseString(String text){
-        return "";
+        StringBuilder sb = new StringBuilder();
+        String [] newText = text.split("");
+        for(int i = text.length() - 1 ; i >=0; --i){
+            sb.append(newText[i]);
+        }
+        return sb.toString();
     }
+
     public static int countVowels(String text){
         return 0;
     }
