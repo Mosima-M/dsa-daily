@@ -27,8 +27,16 @@ class StringsTests {
         assertTrue(Strings.isPalindrome("racecar"));
         assertTrue(Strings.isPalindrome("a"));
         assertTrue(Strings.isPalindrome(""));
-
         assertFalse(Strings.isPalindrome("hello"));
         assertFalse(Strings.isPalindrome("Java"));
     }
+
+    @Test
+    void countCharacter() {
+        assertEquals(3, Strings.countCharacter("banana", 'a'));
+        assertEquals(2, Strings.countCharacter("hello", 'l'));
+        assertEquals(0, Strings.countCharacter("hello", 'z'));
+        assertEquals(4, Strings.countCharacter("aaaa", 'a'));
+    }
+
 }

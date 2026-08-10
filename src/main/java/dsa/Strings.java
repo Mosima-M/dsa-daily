@@ -34,4 +34,9 @@ public class Strings {
         }
         return text.equalsIgnoreCase(reversed);
     }
+
+    public static int countCharacter(String text, char target) {
+        return 0;
+    }
+
 }
