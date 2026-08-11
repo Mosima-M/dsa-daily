@@ -36,7 +36,14 @@ public class Strings {
     }
 
     public static int countCharacter(String text, char target) {
-        return 0;
+        int count = 0;
+
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == target) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }
